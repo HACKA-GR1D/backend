@@ -14,7 +14,7 @@ module.exports = {
 
     // })
     const productsBd2 = await req.get({
-      uri: 'https://gateway.gr1d.io/sandbox/tecban/contas2/v1/products',
+      uri: 'https://gateway.gr1d.io/sandbox/tecban/contas2/v1/products/',
       headers: {
         'Content-Type': 'application/json',
         'X-Api-Key': process.env.KEY_API_ACCOUNTS_BD2
@@ -27,6 +27,15 @@ module.exports = {
 
     const productsBd2Json = JSON.parse(productsBd2)
     const CreditInterest2 = productsBd2Json.Data.Product[0].BCA.CreditInterest.TierBandSet[0]
+
+    const interestMonth = await req.get({
+      uri: `https://gateway.gr1d.io/production/crk/calc/v1/LinearAno/LinearMes/${CreditInterest2.TierBand[0].AER}`,
+      headers: {
+        'Content-Type': 'application/json',
+        'X-Api-Key': process.env.KEY_API_CALCULO
+      },
+      rejectUnauthorized: false
+    })
     const responseProducts = [
       // {
       //   nameBank: 'Banco 1',
@@ -34,7 +43,8 @@ module.exports = {
       //   CalculationFrequency: CreditInterest1.TierBand[0].CalculationFrequency,
       //   ApplicationFrequency: CreditInterest1.TierBand[0].ApplicationFrequency,
       //   VariableInterestRateType: CreditInterest1.TierBand[0].FixedVariableInterestRateType,
-      //   interestRate: CreditInterest1.TierBand[0].AER,
+      //   interestRateYear: CreditInterest1.TierBand[0].AER,
+      // interestRateMonth:interestMonth,
       //   destination: CreditInterest1.Destination
       // },
       {
@@ -43,7 +53,8 @@ module.exports = {
         CalculationFrequency: CreditInterest2.TierBand[0].CalculationFrequency,
         ApplicationFrequency: CreditInterest2.TierBand[0].ApplicationFrequency,
         VariableInterestRateType: CreditInterest2.TierBand[0].FixedVariableInterestRateType,
-        interestRate: CreditInterest2.TierBand[0].AER,
+        interestRateYear: CreditInterest2.TierBand[0].AER,
+        interestRateMonth: interestMonth,
         destination: CreditInterest2.Destination
       }
     ]
