@@ -39,10 +39,10 @@ KEY_API_CALCULO = # Chave da api Calculadora de Taxas Equivalentes
 ### **Executando o Projeto**
 
 #### **:computer: Backend**
-> 2. $npm install
-> 3. $npm start
-> 4. No seu navegador, acesse localhost:3000
-> 5. Enjoy!
+> 1. $npm install
+> 2. $npm start
+> 3. No seu navegador, acesse localhost:3333
+> 4. Enjoy!
 
 
 <!-- Website Links -->
