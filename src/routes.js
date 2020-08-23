@@ -1,7 +1,7 @@
 const { Router } = require('express')
-const apiTecban = require('./controllers/apiTecban')
+const ControllerGrid = require('./controllers/apiGrid')
 const routes = Router()
 
-routes.get('/', apiTecban.offerts)
+routes.get('/products', ControllerGrid.products)
 
 module.exports = routes
