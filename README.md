@@ -29,7 +29,7 @@ O Dona Irene Ajuda é um ecossistema voltado para os comerciantes que não tem o
 
 ## Arquivo .env
 
-```js
+```json
  
 KEY_API_ACCOUNTS_BD1 = #Chave da api Acesso a Contas e Transações
 KEY_API_ACCOUNTS_BD2 = #Chave da api Acesso a Contas e Transações (banco 2)
