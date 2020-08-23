@@ -8,14 +8,13 @@
 
 <h3 align="center">
 
-API desenvolvido na Hackathon da GRID organizada pela  **[Shawee][shawee_site]** utilizando as tecnologias *** Node.js ***.
+API desenvolvido na Hackathon da GRID organizada pela  **[Shawee][shawee_site]** utilizando as tecnologias ***Node.js***.
 
 </h3>
 
 ## **:rocket: Objetivo**
 
-A vovó Irene tem 76 anos e é uma senhora super antenada; com a pandemia do COVID-19 ela percebeu que junto dos seus netos ela poderia ajudar na manutenção da saúde financeira de vários pequenos e médios negócios.
-O Dona Irene Ajuda é um ecossistema voltado para os comerciantes que não tem o aporte financeiro necessário para criar os seus próprios ambientes virtuais e estão passando dificuldades para se adaptar ao momento em que estamos vivendo. Nele, é possível comprar e vender de uma maneira fácil e eficiente, com baixo custo para o comerciante e segurança para o comprador. O serviço traz uma plataforma na web onde os produtos podem ser cadastrados pelos vendedores, e um chatbot que atende o cliente diretamente do Whatsapp, recolhendo o pedido e enviando-o ao comércio.
+A AutoMatch é um serviço de API disponibilizado para concessionárias de veículos automotivos oferecerem melhores condições de financiamento para seus clientes, utilizando dados coletados via open banking em tempo real. Nascemos para resolver esses problemas com o propósito de democratizar o acesso ao crédito automotivo no Brasil. Utilizando as API'S fornecidas pela Gr1d e Tecban, coletamos e analisamos dados disponibilizados via open banking, assim o cliente terá uma análise de crédito mais justa e com condições especiais. Pois as instituições financeiras ao perceberem que o cliente possui recursos o suficiente para bancar seu financiamento, irão competir para disponibilizar a melhor oferta. Nosso modelo de negócios será IpaaS (Integration Platform as a Service) via API (pay-by-use)
 
 ## **:computer: Tecnologias**
 
