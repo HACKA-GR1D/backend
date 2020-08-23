@@ -11,12 +11,12 @@
   },
   "servers": [
     {
-      "url": "http://localhost:3333/",
-      "description": "Local server"
+      "url": "https://auto-match-team-1.herokuapp.com/",
+      "description": "Production"
     },
     {
-      "url": "https://api_url_testing",
-      "description": "Testing server"
+      "url": "http://localhost:3333/",
+      "description": "Local server"
     }
   ],
   "tags": [
